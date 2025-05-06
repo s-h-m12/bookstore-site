@@ -1,0 +1,199 @@
+/* Основные стили хедера */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #FFF8E1; /* Ваш бежевый цвет */
+    font-family: 'Lora', serif !important;
+
+}
+.main-header {
+    background-color: #5D4037;
+    padding: 20px 0;
+    font-family: 'Lora', serif;
+}
+
+.header-container {
+    padding: 0 15px;
+}
+
+/* Сетка хедера */
+.header-grid {
+    align-items: center;
+}
+
+/* Общие стили для секций */
+.header-section {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-section {
+    justify-content: flex-start;
+}
+
+.filter-section {
+    justify-content: flex-end;
+}
+
+/* Стили для кнопок */
+.action-btn {
+    background-color: #381B11;
+    color: #8D6E63 !important;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.action-btn:hover {
+    background-color: #4E342E;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+/* Иконки в кнопках */
+.uk-icon {
+    margin-right: 8px;
+}
+
+/* Логотип */
+.logo img {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-section {
+        padding: 8px;
+    }
+
+    .action-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .logo img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-grid > div {
+        width: 100%;
+    }
+
+    .header-section {
+        justify-content: center !important;
+        padding: 5px 0;
+    }
+
+    .logo-section {
+        order: -1;
+    }
+}
+.magazine{
+position: absolute;
+width: 475px;
+height: 306px;
+left: 63px;
+top: 380px;
+font-family: 'Lora';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 51px;
+color: #5D4037;
+}
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .uk-background-primary {
+            flex: 1;
+        }
+    .custom-footer {
+            background-color: #5D4037;
+            padding: 20px 0;
+            font-family: 'Lora', serif;
+            color: #8D6E63;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #8D6E63;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #8D6E63;
+            opacity: 0.8;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            padding-left: 70px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    .uk-slider-items {
+        padding: 20px 0;
+    }
+
+    .uk-slider-items img {
+        max-height: 400px;
+        object-fit: contain;
+        margin: 0 auto;
+        display: block;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Адаптивность */
+    @media (max-width: 612px) {
+        .uk-slider-items img {
+            max-height: 396px;
+        }
+    }
+
